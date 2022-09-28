@@ -1,0 +1,185 @@
+/* Global */
+
+* {
+  font-family: Avenir, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+/* Chats Page */
+
+.chats-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.nav-bar {
+  width: 100%;
+  height: 66px;
+  background-color: #f9a826;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-tab {
+  display: flex;
+  margin-left: 2.5rem;
+}
+.logo-name {
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+  margin: 10px;
+}
+
+.logo {
+  width: 60px;
+  object-fit: contain;
+}
+
+.logout-tab {
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3rem;
+}
+
+.logout {
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 0.5rem;
+  border-radius: 10px;
+  transition: ease-in 300ms;
+}
+
+.logout:hover {
+  background-color: #fff;
+  color: #e09f2f;
+  transform: scale(1.08);
+}
+
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+/* Login Page */
+
+#login-page {
+  background-image: linear-gradient(#f9a826, #e09f2f);
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  overflow-y: hidden;
+}
+
+#login-card {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 3rem;
+  padding-left: 3rem;
+  padding-right: 4rem;
+  width: 800px;
+  height: 60%;
+  text-align: center;
+  background-color: white;
+  border-radius: 22px;
+}
+
+.title {
+  margin: 1rem;
+}
+
+.title span {
+  color: #f9a826;
+}
+
+@media screen and (max-width: 750px) {
+  #login-card {
+    width: 70%;
+    height: 80%;
+    padding: 2rem;
+  }
+  .flex {
+    flex-direction: column-reverse;
+  }
+
+  .button {
+    max-height: 200px;
+    width: 100px;
+    justify-content: start;
+  }
+
+  .svg {
+    max-width: 350px;
+    max-height: 350px;
+  }
+}
+
+@media screen and (max-width: 486px) {
+  .svg {
+    max-width: 300px;
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+}
+
+.svg {
+  height: 400px;
+  width: 400px;
+}
+.login-button {
+  cursor: pointer;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+.google {
+  background-color: #4285f4;
+  color: white;
+}
+
+#loading-container {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: rgb(255, 255, 255, 0.22);
+}
+
+#loading-icon {
+  font-size: 66px;
+  position: relative;
+  left: calc(50vw - 33px);
+  top: calc(50vh - 22px);
+}
